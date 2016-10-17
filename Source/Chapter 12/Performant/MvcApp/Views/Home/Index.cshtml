@@ -1,0 +1,28 @@
+﻿@section scripts{
+    <script type="text/javascript">
+
+        if (!!window.EventSource) {
+            var source = new EventSource('http://localhost:35868/api/values');
+            source.addEventListener('message', function (e) {
+                var data = JSON.parse(e.data);
+                
+               var content = data.Symbol + ' Bid: ' + data.Bid +
+                                                   ' Ask: ' + data.Ask + ' ' + data.Time;
+               
+               $('#messages').html(content);
+            }, false);
+            
+            source.addEventListener('error', function (e) {
+                if (e.readyState == EventSource.CLOSED) {
+                    console.log("error!");
+                }
+            }, false);
+        }
+        else {
+            alert('It is almost time to upgrade your browser!');
+        }
+
+    </script>
+}
+
+<div id="messages"></div>

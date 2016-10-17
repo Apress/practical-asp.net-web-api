@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWebApi", "HelloWebApi\HelloWebApi.csproj", "{5C7E3F2A-6DB8-4312-B9D3-9B015C7F77D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{1F81FDC3-FA0F-4127-886B-0E62CF581C5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C7E3F2A-6DB8-4312-B9D3-9B015C7F77D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7E3F2A-6DB8-4312-B9D3-9B015C7F77D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7E3F2A-6DB8-4312-B9D3-9B015C7F77D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7E3F2A-6DB8-4312-B9D3-9B015C7F77D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F81FDC3-FA0F-4127-886B-0E62CF581C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F81FDC3-FA0F-4127-886B-0E62CF581C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F81FDC3-FA0F-4127-886B-0E62CF581C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F81FDC3-FA0F-4127-886B-0E62CF581C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

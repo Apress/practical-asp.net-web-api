@@ -1,0 +1,50 @@
+﻿<!--
+<form action="/api/employees" method="post">
+    <div>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname"/>
+    </div>
+    <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname"/>
+    </div>
+    <input type="submit" value="Submit"/>
+</form>
+-->
+
+@section scripts{
+    <script type="text/javascript">
+        $.support.cors = true; // Needed for IE
+
+        $(document).ready(function () {
+            $('#btnPost').click(function () {
+                $.post("http://localhost:37276/api/employees",
+                                $('#employeeForm').serialize())
+                    .done(function (data) { alert("New employee created. ID is " + data); })
+                        .fail(function () { alert("Error creating employee"); });
+            });
+
+            $('#btnPostPartial').click(function () {
+                $.post("http://localhost:37276/api/employees",
+                                { "": $('#lastname').val() })
+                    .done(function (data) { alert("New employee created. ID is " + data); })
+                        .fail(function () { alert("Error creating employee"); });
+            });
+        });
+    </script>
+}
+
+<form id="employeeForm" action=" http://localhost:37276/api/employees" method="post">
+    <div>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" />
+    </div>
+    <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" />
+    </div>
+    <input type="submit" value="Submit" />
+    <input id="btnPost" type="button" value="jQuery POST" />
+    <input id="btnPostPartial" type="button" value="jQuery POST Partial" />
+</form>
+

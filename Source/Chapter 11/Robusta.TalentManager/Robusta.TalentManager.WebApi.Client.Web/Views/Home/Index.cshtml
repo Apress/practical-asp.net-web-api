@@ -1,0 +1,54 @@
+﻿@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#login-dialog").dialog({
+                modal: true,
+                buttons: {
+                    Ok: function () {
+                        $(this).dialog("close");
+
+                        $.post("http://localhost:7298/handler/jwt",
+                            {
+                                username: $('#username').val(),
+                                password: $('#password').val()
+                            })
+                            .done(function (token) {
+                                $('#username').val(null);
+                                $('#password').val(null);
+
+                                $.ajax({
+                                    type: 'GET',
+                                    url: 'http://localhost/talentmanager/api/employees/1',
+                                    headers: { 'Authorization': 'Bearer ' + token },
+                                    success: function (employee) {
+                                        var content = employee.Id + ' ' + employee.FirstName;
+                                        content = content + ' ' + employee.LastName;
+                                        $('#employee').append($('<li/>', { text: content }));
+                                    }
+                                });
+                            });
+                    }
+                }
+            });
+        });
+
+    </script>
+}
+<div>
+    <div>
+        <ul id="employee" />
+    </div>
+</div>
+
+<div id="login-dialog" title="Please Login">
+    <table>
+        <tr>
+            <td>User ID:</td>
+            <td>@Html.TextBox("username")</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>@Html.Password("password")</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robusta.TalentManager.Domain", "Robusta.TalentManager.Domain\Robusta.TalentManager.Domain.csproj", "{90945946-FF08-4E8D-AD3E-BB3B0B3AEC6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robusta.TalentManager.Data", "Robusta.TalentManager.Data\Robusta.TalentManager.Data.csproj", "{EAFFC218-E238-4337-BEB4-114B26435CA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robusta.TalentManager.WebApi.Core", "Robusta.TalentManager.WebApi.Core\Robusta.TalentManager.WebApi.Core.csproj", "{9B7E5403-5B73-4A66-9DFE-B770E7F6894F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robusta.TalentManager.WebApi.Dto", "Robusta.TalentManager.WebApi.Dto\Robusta.TalentManager.WebApi.Dto.csproj", "{B2735800-CDBA-4645-A8F7-697C20AD0C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robusta.TalentManager.WebApi.WebHost", "Robusta.TalentManager.WebApi.WebHost\Robusta.TalentManager.WebApi.WebHost.csproj", "{879DF0DA-93A7-4BFC-AB3F-6A396B2E3C41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robusta.TalentManager.WebApi.SelfHost", "Robusta.TalentManager.WebApi.SelfHost\Robusta.TalentManager.WebApi.SelfHost.csproj", "{D0F6770B-767A-4742-BF82-8D1D670A02A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robusta.TalentManager.WebApi.Test", "Robusta.TalentManager.WebApi.Test\Robusta.TalentManager.WebApi.Test.csproj", "{6A539F58-7AEB-470B-9094-FB25046DF83B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90945946-FF08-4E8D-AD3E-BB3B0B3AEC6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90945946-FF08-4E8D-AD3E-BB3B0B3AEC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90945946-FF08-4E8D-AD3E-BB3B0B3AEC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90945946-FF08-4E8D-AD3E-BB3B0B3AEC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFFC218-E238-4337-BEB4-114B26435CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFFC218-E238-4337-BEB4-114B26435CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFFC218-E238-4337-BEB4-114B26435CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFFC218-E238-4337-BEB4-114B26435CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7E5403-5B73-4A66-9DFE-B770E7F6894F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7E5403-5B73-4A66-9DFE-B770E7F6894F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7E5403-5B73-4A66-9DFE-B770E7F6894F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7E5403-5B73-4A66-9DFE-B770E7F6894F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2735800-CDBA-4645-A8F7-697C20AD0C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2735800-CDBA-4645-A8F7-697C20AD0C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2735800-CDBA-4645-A8F7-697C20AD0C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2735800-CDBA-4645-A8F7-697C20AD0C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{879DF0DA-93A7-4BFC-AB3F-6A396B2E3C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{879DF0DA-93A7-4BFC-AB3F-6A396B2E3C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{879DF0DA-93A7-4BFC-AB3F-6A396B2E3C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{879DF0DA-93A7-4BFC-AB3F-6A396B2E3C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F6770B-767A-4742-BF82-8D1D670A02A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F6770B-767A-4742-BF82-8D1D670A02A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F6770B-767A-4742-BF82-8D1D670A02A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F6770B-767A-4742-BF82-8D1D670A02A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A539F58-7AEB-470B-9094-FB25046DF83B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A539F58-7AEB-470B-9094-FB25046DF83B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A539F58-7AEB-470B-9094-FB25046DF83B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A539F58-7AEB-470B-9094-FB25046DF83B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

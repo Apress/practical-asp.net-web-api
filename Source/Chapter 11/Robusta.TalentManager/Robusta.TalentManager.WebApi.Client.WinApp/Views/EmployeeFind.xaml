@@ -1,0 +1,24 @@
+﻿<Window x:Class="Robusta.TalentManager.WebApi.Client.WinApp.Views.EmployeeFind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Find Employee" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <WrapPanel>
+                <TextBlock Text="ID:" Width="50"/>
+                <TextBox Text="{Binding EmployeeId}" Width="100"/>
+                <Button Content="Find" HorizontalAlignment="Left"
+                            Command="{Binding FindCommand}" Name="btnFind"
+                            VerticalAlignment="Top" Width="100" FontWeight="Normal"/>
+            </WrapPanel>
+            <TextBlock Name="txbResult">
+                <Run Text="Employee ID: "/>        
+                <Run Text="{Binding EmployeeFound.Id}" />
+                <LineBreak/>
+                <Run Text="Employee Name: "/>        
+                <Run Text="{Binding EmployeeFound.FirstName}" />
+                <Run Text="{Binding EmployeeFound.LastName}" />
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
